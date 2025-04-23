@@ -30,4 +30,7 @@ $user = $result->fetch_assoc();
     </div>
 </body>
 </html>
+<?php if (isAdmin()): ?>
+    | <a href="manage_users.php">Manage Users</a>
+<?php endif; ?>
 

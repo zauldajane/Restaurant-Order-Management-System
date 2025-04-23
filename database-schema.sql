@@ -10,3 +10,4 @@ CREATE TABLE Users(
     password VACHAR(255) NOT NULL,
     role ENUM('admin','customer') DEFAULT 'cutomer'
 );
+ALTER TABLE Users ADD role ENUM('user', 'admin') DEFAULT 'user';
